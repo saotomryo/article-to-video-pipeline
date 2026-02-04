@@ -1,0 +1,39 @@
+{
+  "master": {
+    "duration_sec": 42.816
+  },
+  "items": [
+    {
+      "id": "0001_サンプル記事",
+      "title": "サンプル記事",
+      "start": 0.0,
+      "end": 13.557,
+      "wav_path": "audio/0001_サンプル記事.wav",
+      "text_path": "script/segments/0001_サンプル記事.txt"
+    },
+    {
+      "id": "0002_イントロ",
+      "title": "イントロ",
+      "start": 13.557,
+      "end": 20.811,
+      "wav_path": "audio/0002_イントロ.wav",
+      "text_path": "script/segments/0002_イントロ.txt"
+    },
+    {
+      "id": "0003_本編",
+      "title": "本編",
+      "start": 20.811,
+      "end": 34.027,
+      "wav_path": "audio/0003_本編.wav",
+      "text_path": "script/segments/0003_本編.txt"
+    },
+    {
+      "id": "0004_まとめ",
+      "title": "まとめ",
+      "start": 34.027,
+      "end": 42.816,
+      "wav_path": "audio/0004_まとめ.wav",
+      "text_path": "script/segments/0004_まとめ.txt"
+    }
+  ]
+}

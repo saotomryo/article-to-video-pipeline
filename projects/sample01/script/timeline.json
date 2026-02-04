@@ -1,0 +1,111 @@
+{
+  "master": {
+    "duration_sec": 262.699
+  },
+  "items": [
+    {
+      "id": "0001_各政党の方針姿勢のaiによる見える化アプリケーションについて2026年衆院選マニ",
+      "title": "各政党の方針・姿勢のAIによる見える化アプリケーションについて（2026年衆院選マニュフェストより）",
+      "start": 0.0,
+      "end": 35.819,
+      "wav_path": "audio/0001_各政党の方針姿勢のaiによる見える化アプリケーションについて2026年衆院選マニ.wav",
+      "text_path": "script/segments/0001_各政党の方針姿勢のaiによる見える化アプリケーションについて2026年衆院選マニ.txt"
+    },
+    {
+      "id": "0002_1_チームみらい",
+      "title": "1. チームみらい",
+      "start": 35.819,
+      "end": 53.589,
+      "wav_path": "audio/0002_1_チームみらい.wav",
+      "text_path": "script/segments/0002_1_チームみらい.txt"
+    },
+    {
+      "id": "0003_2_れいわ新撰組",
+      "title": "2. れいわ新撰組",
+      "start": 53.589,
+      "end": 73.739,
+      "wav_path": "audio/0003_2_れいわ新撰組.wav",
+      "text_path": "script/segments/0003_2_れいわ新撰組.txt"
+    },
+    {
+      "id": "0004_3_国民民主党",
+      "title": "3. 国民民主党",
+      "start": 73.739,
+      "end": 94.037,
+      "wav_path": "audio/0004_3_国民民主党.wav",
+      "text_path": "script/segments/0004_3_国民民主党.txt"
+    },
+    {
+      "id": "0005_4_参政党",
+      "title": "4. 参政党",
+      "start": 94.037,
+      "end": 112.736,
+      "wav_path": "audio/0005_4_参政党.wav",
+      "text_path": "script/segments/0005_4_参政党.txt"
+    },
+    {
+      "id": "0006_5_自由民主党",
+      "title": "5. 自由民主党",
+      "start": 112.736,
+      "end": 132.64,
+      "wav_path": "audio/0006_5_自由民主党.wav",
+      "text_path": "script/segments/0006_5_自由民主党.txt"
+    },
+    {
+      "id": "0007_6_社会民主党",
+      "title": "6. 社会民主党",
+      "start": 132.64,
+      "end": 152.277,
+      "wav_path": "audio/0007_6_社会民主党.wav",
+      "text_path": "script/segments/0007_6_社会民主党.txt"
+    },
+    {
+      "id": "0008_7_中道改革連合",
+      "title": "7. 中道改革連合",
+      "start": 152.277,
+      "end": 172.544,
+      "wav_path": "audio/0008_7_中道改革連合.wav",
+      "text_path": "script/segments/0008_7_中道改革連合.txt"
+    },
+    {
+      "id": "0009_8_日本維新の会",
+      "title": "8. 日本維新の会",
+      "start": 172.544,
+      "end": 190.4,
+      "wav_path": "audio/0009_8_日本維新の会.wav",
+      "text_path": "script/segments/0009_8_日本維新の会.txt"
+    },
+    {
+      "id": "0010_9_日本共産党",
+      "title": "9. 日本共産党",
+      "start": 190.4,
+      "end": 211.125,
+      "wav_path": "audio/0010_9_日本共産党.wav",
+      "text_path": "script/segments/0010_9_日本共産党.txt"
+    },
+    {
+      "id": "0011_10_日本保守党",
+      "title": "10. 日本保守党",
+      "start": 211.125,
+      "end": 229.259,
+      "wav_path": "audio/0011_10_日本保守党.wav",
+      "text_path": "script/segments/0011_10_日本保守党.txt"
+    },
+    {
+      "id": "0012_まとめ",
+      "title": "まとめ",
+      "start": 229.259,
+      "end": 244.629,
+      "wav_path": "audio/0012_まとめ.wav",
+      "text_path": "script/segments/0012_まとめ.txt"
+    },
+    {
+      "id": "0013_所感",
+      "title": "所感",
+      "start": 244.629,
+      "end": 262.699,
+      "wav_path": "audio/0013_所感.wav",
+      "text_path": "script/segments/0013_所感.txt"
+    }
+  ]
+}

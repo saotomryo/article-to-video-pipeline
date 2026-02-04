@@ -1,0 +1,25 @@
+{
+  "slug": "example",
+  "title": "example",
+  "tts": {
+    "provider": "voicevox",
+    "base_url": "http://localhost:50021",
+    "speaker": 1
+  },
+  "video": {
+    "long": { "width": 1920, "height": 1080, "fps": 30 },
+    "shorts": { "width": 1080, "height": 1920, "fps": 30 }
+  },
+  "shorts_layout": {
+    "mode": "blur_bg_foreground",
+    "caption_height_ratio": 0.28,
+    "caption_box_alpha": 0.35
+  },
+  "shorts": [
+    {
+      "id": "sample_1",
+      "title": "半自動動画の流れ",
+      "segments": ["0002_イントロ", "0003_本編"]
+    }
+  ]
+}

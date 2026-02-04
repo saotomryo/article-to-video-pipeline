@@ -1,0 +1,67 @@
+[
+  {
+    "id": "0001_各政党の方針姿勢のaiによる見える化アプリケーションについて2026年衆院選マニ",
+    "title": "各政党の方針・姿勢のAIによる見える化アプリケーションについて（2026年衆院選マニュフェストより）",
+    "text_path": "script/segments/0001_各政党の方針姿勢のaiによる見える化アプリケーションについて2026年衆院選マニ.txt"
+  },
+  {
+    "id": "0002_1_チームみらい",
+    "title": "1. チームみらい",
+    "text_path": "script/segments/0002_1_チームみらい.txt"
+  },
+  {
+    "id": "0003_2_れいわ新撰組",
+    "title": "2. れいわ新撰組",
+    "text_path": "script/segments/0003_2_れいわ新撰組.txt"
+  },
+  {
+    "id": "0004_3_国民民主党",
+    "title": "3. 国民民主党",
+    "text_path": "script/segments/0004_3_国民民主党.txt"
+  },
+  {
+    "id": "0005_4_参政党",
+    "title": "4. 参政党",
+    "text_path": "script/segments/0005_4_参政党.txt"
+  },
+  {
+    "id": "0006_5_自由民主党",
+    "title": "5. 自由民主党",
+    "text_path": "script/segments/0006_5_自由民主党.txt"
+  },
+  {
+    "id": "0007_6_社会民主党",
+    "title": "6. 社会民主党",
+    "text_path": "script/segments/0007_6_社会民主党.txt"
+  },
+  {
+    "id": "0008_7_中道改革連合",
+    "title": "7. 中道改革連合",
+    "text_path": "script/segments/0008_7_中道改革連合.txt"
+  },
+  {
+    "id": "0009_8_日本維新の会",
+    "title": "8. 日本維新の会",
+    "text_path": "script/segments/0009_8_日本維新の会.txt"
+  },
+  {
+    "id": "0010_9_日本共産党",
+    "title": "9. 日本共産党",
+    "text_path": "script/segments/0010_9_日本共産党.txt"
+  },
+  {
+    "id": "0011_10_日本保守党",
+    "title": "10. 日本保守党",
+    "text_path": "script/segments/0011_10_日本保守党.txt"
+  },
+  {
+    "id": "0012_まとめ",
+    "title": "まとめ",
+    "text_path": "script/segments/0012_まとめ.txt"
+  },
+  {
+    "id": "0013_所感",
+    "title": "所感",
+    "text_path": "script/segments/0013_所感.txt"
+  }
+]

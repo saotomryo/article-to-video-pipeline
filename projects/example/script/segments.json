@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0001_サンプル記事",
+    "title": "サンプル記事",
+    "text_path": "script/segments/0001_サンプル記事.txt"
+  },
+  {
+    "id": "0002_イントロ",
+    "title": "イントロ",
+    "text_path": "script/segments/0002_イントロ.txt"
+  },
+  {
+    "id": "0003_本編",
+    "title": "本編",
+    "text_path": "script/segments/0003_本編.txt"
+  },
+  {
+    "id": "0004_まとめ",
+    "title": "まとめ",
+    "text_path": "script/segments/0004_まとめ.txt"
+  }
+]
