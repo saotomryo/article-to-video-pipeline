@@ -1,4 +1,5 @@
 .DS_Store
+**/.DS_Store
 __pycache__/
 *.pyc
 .venv/
@@ -17,3 +18,5 @@ projects/*/audio/
 projects/*/render/
 projects/*/export/
 projects/*/cache/
+
+**/.DS_Store
