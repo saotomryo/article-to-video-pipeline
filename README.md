@@ -92,6 +92,89 @@ winget install Gyan.FFmpeg
 
 ## 使い方（最短）
 
+## フロー図（動画生成まで）
+
+```mermaid
+flowchart TD
+  A["入力（記事/台本）"] --> B{"取り込み方法"}
+
+  B -->|既にMarkdown| C["projects/<slug>/source/article.md"]
+  B -->|URL| D["vg import-url → article.md / article.html"]
+  B -->|txt/docx/pptx| E["vg import-file → article.md + 画像抽出（任意）"]
+
+  C --> F["vg script（記事→セグメント）"]
+  D --> F
+  E --> F
+
+  F --> G["（任意）人が台本を整形: script/segments/*.txt"]
+  G --> H["vg tts（VOICEVOX/VOICEBOX）"]
+  H --> I["vg timeline（開始/終了 + master.wav）"]
+
+  I --> J{"表示素材の準備"}
+  J -->|手動で assets/images/<segment_id>.* を置く| K["セグメント画像"]
+  J -->|vg visuals（画像が無い箇所だけスライド生成）| L["assets/images + assignments.json"]
+  K --> M["vg render（master_long.mp4）"]
+  L --> M
+
+  M --> N["（任意）vg shorts（縦動画）"]
+```
+
+## フロー図（スキル利用：Codex / Claude Code）
+
+```mermaid
+flowchart TD
+  U["ユーザー"] --> S{"スキルを使う？"}
+
+  S -->|使わない| CLI["READMEの手順通りにCLIを実行"]
+  CLI --> OUT["動画（master_long.mp4）"]
+
+  S -->|使う| AGENT["Codex / Claude Code"]
+  AGENT --> CHOOSE{"どの入力？"}
+
+  CHOOSE -->|URL| SK1["skill: import-url-ja\n(記事取得→プロジェクト作成)"]
+  CHOOSE -->|txt/docx/pptx| SK4["skill: chapter-split-ja\n(章分割/見出し付け)"]
+  CHOOSE -->|既にMarkdown| SK2["skill: reading-script-ja\n(読み上げ台本整形)"]
+  CHOOSE -->|対話形式| SK5["skill: dialog-video-ja\n(対話台本→話者切替TTS)"]
+
+  SK1 --> NEXT["プロジェクト projects/<slug>"]
+  SK4 --> NEXT
+  SK2 --> NEXT
+  SK5 --> NEXT
+
+  NEXT --> VIS{"表示素材の用意"}
+  VIS -->|画像優先/無い箇所のみスライド| SK3["skill: segment-visuals-ja\n(vg visuals)"]
+  VIS -->|手動で差し替え| MAN["assets/images/<segment_id>.* を編集"]
+
+  SK3 --> RENDER["vg render"]
+  MAN --> RENDER
+  RENDER --> OUT2["動画（master_long.mp4）"]
+
+  RENDER -->|必要なら| SHORTS["vg shorts"]
+```
+
+## フロー図（AIへの依頼例：コピペ用）
+
+```mermaid
+flowchart TD
+  START["あなた（ユーザー）"] --> TOOL{"使うツール"}
+
+  TOOL -->|Codex| CODEX["Codexに入力"]
+  TOOL -->|Claude Code| CLAUDE["Claude Codeに入力"]
+
+  CODEX --> CASE{"やりたいこと"}
+  CLAUDE --> CASE
+
+  CASE -->|URLの記事から作る| P1["例: import-url-ja\n\n「import-url-ja を使って、次のURLを取り込んで projects/<slug> を作って。\nURL: https://...\n画像も落として rewrite して」"]
+
+  CASE -->|手元のdocx/pptx/txtから作る| P2["例: import-file + chapter-split\n\n「projects/<slug> を作って、このファイルを取り込んで article.md を作って。\nその後、skills/chapter-split/SKILL.md の方針で章分割して」\n入力ファイル: /path/to/file.docx"]
+
+  CASE -->|読み上げ台本に整形| P3["例: reading-script-ja\n\n「reading-script-ja を使って projects/<slug>/source/article.md から読み上げ台本を作って。\n長すぎるセグメントは分割して」"]
+
+  CASE -->|対話形式の別動画を作る| P4["例: dialog-video-ja\n\n「dialog-video-ja の手順で、記事を対話形式にして別プロジェクト projects/<slug>_dialog を作って。\nA=説明役、B=質問役。話者は A=1, B=8」"]
+
+  CASE -->|画像/スライドを反映| P5["例: segment-visuals-ja\n\n「segment-visuals-ja の手順で、画像がある箇所は画像のみ、無い箇所だけスライド生成して。\nその後 render まで実行して」"]
+```
+
 ### 1) サンプル案件を動かす
 
 ```
